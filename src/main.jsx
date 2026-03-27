@@ -7,7 +7,7 @@ import ScrollTop from './components/ScrollTop.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Router>
+    <Router basename="/ssitm">
     <ScrollTop />
     <App />
     </Router>
