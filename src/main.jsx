@@ -7,7 +7,7 @@ import ScrollTop from './components/ScrollTop.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Router basename="/ssitm">
+    <Router basename={window.location.hostname === 'ssitm.in' || window.location.hostname === 'www.ssitm.in' ? '/' : '/ssitm'}>
     <ScrollTop />
     <App />
     </Router>
